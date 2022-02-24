@@ -1,0 +1,8 @@
+version: '3'
+services:
+  desafio:
+    build: .
+    volumes:
+      - .:/jeremias:cached
+volumes:
+  jeremias-data:

@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://jsonplaceholder.typicode.com/users/5
+    body:
+      encoding: UTF-8
+      string: '{"email":"jeremias@me.com","address":{"get":{"lat":"123","lng":"321"}}}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.10.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 23 Feb 2022 18:44:00 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      x-powered-by:
+      - Express
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '998'
+      x-ratelimit-reset:
+      - '1645641869'
+      vary:
+      - Origin, Accept-Encoding
+      access-control-allow-credentials:
+      - 'true'
+      cache-control:
+      - no-cache
+      pragma:
+      - no-cache
+      expires:
+      - "-1"
+      x-content-type-options:
+      - nosniff
+      etag:
+      - W/"79-29oJ5KWedk9yivTp2uxCSTL0VbU"
+      via:
+      - 1.1 vegur
+      cf-cache-status:
+      - DYNAMIC
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Au9MnKWWXxcKgJ7I2cA%2BZVkRXiana2AWgBT%2Fnk3yFljLw0xkATuPsXGoLwgWXC4X9IxIK5QVjQGzGnIp8gW1WNR%2FpVwVMMK6fJmSeYhdwtzzA%2FPeb84PcmrrnIjy1mMq8437DocJxwzcMKqNkTPC"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 6e229a5f5c796b14-GRU
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "email": "jeremias@me.com",
+          "address": {
+            "get": {
+              "lat": "123",
+              "lng": "321"
+            }
+          },
+          "id": 5
+        }
+  recorded_at: Wed, 23 Feb 2022 18:44:00 GMT
+recorded_with: VCR 6.0.0

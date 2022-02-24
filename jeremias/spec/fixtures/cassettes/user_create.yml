@@ -1,0 +1,99 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://jsonplaceholder.typicode.com/users
+    body:
+      encoding: UTF-8
+      string: '{"name":"Lorem Ipsum","username":"lorem_ipsum","email":"Lucio_Hettinger@annie.ca","address":{"street":"Skiles
+        Walks","suite":"Suite 351","city":"Roscoeview","zipcode":"33263","geo":{"lat":"-31.8129","lng":"62.5342"}},"phone":"(254)954-1289","website":"demarco.info","company":{"name":"Keebler
+        LLC","catchPhrase":"User-centric fault-tolerant solution","bs":"revolutionize
+        end-to-end systems"}}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v1.10.0
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      date:
+      - Wed, 23 Feb 2022 18:44:00 GMT
+      content-type:
+      - application/json; charset=utf-8
+      content-length:
+      - '508'
+      connection:
+      - keep-alive
+      x-powered-by:
+      - Express
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '999'
+      x-ratelimit-reset:
+      - '1645641869'
+      vary:
+      - Origin, X-HTTP-Method-Override, Accept-Encoding
+      access-control-allow-credentials:
+      - 'true'
+      cache-control:
+      - no-cache
+      pragma:
+      - no-cache
+      expires:
+      - "-1"
+      access-control-expose-headers:
+      - Location
+      location:
+      - http://jsonplaceholder.typicode.com/users/11
+      x-content-type-options:
+      - nosniff
+      etag:
+      - W/"1fc-kvrMV49xQO1jotDD/BpRyq1jpP4"
+      via:
+      - 1.1 vegur
+      cf-cache-status:
+      - DYNAMIC
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=w4WO9Mxxq1ttZOv8uq0bOuQa7WwTSuF%2By1bRZcx%2FWkLqL2GbfumCJeU%2B3srHK3bE1U9PHr7ifXu0Dg3uwt2vyDndHdPiBZZ7YXQ%2B6%2FyjytVg0X95vII%2FFl0%2BgxeeoX3AyhzVvuHDbh4LtmMIUqYm"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 6e229a5c8e5acfe4-GRU
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "name": "Lorem Ipsum",
+          "username": "lorem_ipsum",
+          "email": "Lucio_Hettinger@annie.ca",
+          "address": {
+            "street": "Skiles Walks",
+            "suite": "Suite 351",
+            "city": "Roscoeview",
+            "zipcode": "33263",
+            "geo": {
+              "lat": "-31.8129",
+              "lng": "62.5342"
+            }
+          },
+          "phone": "(254)954-1289",
+          "website": "demarco.info",
+          "company": {
+            "name": "Keebler LLC",
+            "catchPhrase": "User-centric fault-tolerant solution",
+            "bs": "revolutionize end-to-end systems"
+          },
+          "id": 11
+        }
+  recorded_at: Wed, 23 Feb 2022 18:44:00 GMT
+recorded_with: VCR 6.0.0
